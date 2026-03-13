@@ -109,6 +109,7 @@ document
 document.getElementById("btn-correct").addEventListener("click", () => review(true));
 document.getElementById("btn-wrong").addEventListener("click", () => review(false));
 els.masteryButtons.addEventListener("click", onMasteryClick);
+els.musicLink.addEventListener("click", onMusicClick);
 
 render();
 
@@ -244,6 +245,39 @@ function getOverallAccuracy() {
   });
   if (seen === 0) return 0;
   return correct / seen;
+}
+
+function onMusicClick(event) {
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  if (!isIOS) return;
+
+  event.preventDefault();
+  const item = learningItems.find((x) => x.id === state.currentId) || learningItems[0];
+  const keyword = `${item.sourceSong} ${item.head}`;
+
+  copyText(keyword).finally(() => {
+    // Try to open QQ Music app first; if blocked, user can paste copied keyword manually.
+    window.location.href = "qqmusic://";
+    setTimeout(() => {
+      alert("已复制歌曲关键词，请在 QQ 音乐中粘贴搜索。");
+    }, 500);
+  });
+}
+
+function copyText(text) {
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    return navigator.clipboard.writeText(text);
+  }
+
+  return new Promise((resolve) => {
+    const input = document.createElement("textarea");
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    input.remove();
+    resolve();
+  });
 }
 
 if ("serviceWorker" in navigator) {
