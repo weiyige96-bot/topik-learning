@@ -8,7 +8,7 @@ const learningItems = [
     example: "널 사랑해, 믿어줘",
     exampleCn: "我爱你，请相信我。",
     sourceSong: "BIGBANG - LAST DANCE",
-    musicUrl: "https://www.youtube.com/watch?v=--zku6TB5NY",
+    musicUrl: "https://y.qq.com/n/ryqq/search?w=BIGBANG%20LAST%20DANCE",
     detail: "常见搭配：사랑하다(爱), 첫사랑(初恋)。"
   },
   {
@@ -20,7 +20,7 @@ const learningItems = [
     example: "봄날이 와도 기다릴게",
     exampleCn: "即使春天来了我也会等待你。",
     sourceSong: "BTS - 봄날 (Spring Day)",
-    musicUrl: "https://www.youtube.com/watch?v=xEeFrLSkMm8",
+    musicUrl: "https://y.qq.com/n/ryqq/search?w=BTS%20Spring%20Day",
     detail: "动词原形 기다리다，过去式 기다렸다。"
   },
   {
@@ -32,7 +32,7 @@ const learningItems = [
     example: "다시 꾸는 꿈처럼",
     exampleCn: "就像再次做起的梦一样。",
     sourceSong: "IU - 드라마 (Drama)",
-    musicUrl: "https://www.youtube.com/watch?v=8xR_hA2fKqQ",
+    musicUrl: "https://y.qq.com/n/ryqq/search?w=IU%20Drama",
     detail: "惯用：꿈을 꾸다(做梦/怀抱梦想)。"
   },
   {
@@ -44,7 +44,7 @@ const learningItems = [
     example: "지금 너를 보고 싶어",
     exampleCn: "现在想见你。",
     sourceSong: "TAEYEON - I",
-    musicUrl: "https://www.youtube.com/watch?v=4OrCA1OInoo",
+    musicUrl: "https://y.qq.com/n/ryqq/search?w=TAEYEON%20I",
     detail: "接动词词干，表达说话者愿望：먹고 싶다, 가고 싶다。"
   },
   {
@@ -56,7 +56,7 @@ const learningItems = [
     example: "비가 와도 괜찮아",
     exampleCn: "就算下雨也没关系。",
     sourceSong: "DAY6 - 괜찮아도 괜찮아",
-    musicUrl: "https://www.youtube.com/watch?v=0NfXhD7N4V0",
+    musicUrl: "https://y.qq.com/n/ryqq/search?w=DAY6%20%EA%B4%9C%EC%B0%AE%EC%95%84%EB%8F%84%20%EA%B4%9C%EC%B0%AE%EC%95%84",
     detail: "让步关系：늦어도 괜찮아요(晚点也没关系)。"
   },
   {
@@ -68,7 +68,7 @@ const learningItems = [
     example: "네가 있으니까 난 괜찮아",
     exampleCn: "因为有你，我没关系。",
     sourceSong: "Gummy - You Are My Everything",
-    musicUrl: "https://www.youtube.com/watch?v=7B44w9M0fXk",
+    musicUrl: "https://y.qq.com/n/ryqq/search?w=Gummy%20You%20Are%20My%20Everything",
     detail: "连接原因，常用于口语解释原因。"
   }
 ];
