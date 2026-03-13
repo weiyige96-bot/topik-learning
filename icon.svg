@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TOPIK learning icon">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#227c5a"/>
+      <stop offset="100%" stop-color="#f28f3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect x="94" y="110" width="324" height="292" rx="28" fill="#fffdf8" opacity="0.95"/>
+  <text x="122" y="218" font-size="74" font-family="Arial, sans-serif" font-weight="700" fill="#1d5b43">TOPIK</text>
+  <text x="122" y="286" font-size="42" font-family="Arial, sans-serif" fill="#4a5d4f">K-pop</text>
+  <circle cx="374" cy="339" r="44" fill="#227c5a"/>
+  <path d="M362 320v32c0 11 9 20 20 20s20-9 20-20v-47l20-4v31c0 16-13 29-29 29s-29-13-29-29v-52l58-11v23z" fill="#fff"/>
+</svg>

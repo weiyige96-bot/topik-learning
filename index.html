@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#227c5a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="TOPIK歌词学习" />
+    <title>TOPIK 歌词词汇与语法学习</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>TOPIK 歌词学习站</h1>
+        <p>用韩语歌曲例句学习词汇和语法，系统会按你的正确率推荐下一个重点。</p>
+      </header>
+
+      <section class="panel stats" aria-label="学习统计">
+        <div>
+          <span class="label">总复习次数</span>
+          <strong id="total-reviews">0</strong>
+        </div>
+        <div>
+          <span class="label">综合正确率</span>
+          <strong id="overall-accuracy">0%</strong>
+        </div>
+        <div>
+          <span class="label">推荐类型</span>
+          <strong id="recommendation-reason">未学习内容优先</strong>
+        </div>
+      </section>
+
+      <section class="panel review" aria-label="学习卡片">
+        <div class="card-top">
+          <span id="item-type" class="pill">词汇</span>
+          <span id="item-level" class="pill muted">TOPIK I</span>
+        </div>
+
+        <h2 id="item-head" class="korean">단어</h2>
+        <p id="item-meaning" class="meaning">词义</p>
+
+        <div class="example-block">
+          <p class="label">歌曲例句</p>
+          <p id="item-example" class="korean">예문</p>
+          <p id="item-example-cn" class="meaning">中文翻译</p>
+          <a id="music-link" class="music-btn" href="#" target="_blank" rel="noopener noreferrer">点开听这首歌</a>
+        </div>
+
+        <div class="actions">
+          <button id="btn-show-answer" class="btn secondary">显示解析</button>
+          <button id="btn-correct" class="btn success">我答对了</button>
+          <button id="btn-wrong" class="btn danger">我答错了</button>
+        </div>
+
+        <div id="item-detail" class="detail hidden"></div>
+      </section>
+
+      <section class="panel mastery" aria-label="掌握程度">
+        <h3>掌握程度</h3>
+        <p class="sub">给当前条目打标，影响后续推荐权重。</p>
+        <div class="mastery-buttons" id="mastery-buttons">
+          <button data-level="0" class="btn ghost">未学过</button>
+          <button data-level="1" class="btn ghost">模糊</button>
+          <button data-level="2" class="btn ghost">基本掌握</button>
+          <button data-level="3" class="btn ghost">熟练</button>
+        </div>
+      </section>
+
+      <section class="panel queue" aria-label="推荐队列">
+        <h3>当前优先推荐</h3>
+        <ul id="recommend-list"></ul>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

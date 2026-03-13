@@ -1,0 +1,19 @@
+{
+  "name": "TOPIK 歌词词汇与语法学习",
+  "short_name": "TOPIK学习",
+  "description": "基于韩语歌曲例句的 TOPIK 词汇与语法学习 App",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8f2",
+  "theme_color": "#227c5a",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
